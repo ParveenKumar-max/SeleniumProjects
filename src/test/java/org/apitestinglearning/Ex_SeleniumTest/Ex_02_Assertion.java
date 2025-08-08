@@ -7,11 +7,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Ex_selenium_02 {
+public class Ex_02_Assertion {
 
     @Test
     @Owner("Parveen Chaudhary")
-    @Description("")
+    @Description("TC_02_Verify assertion, Actual Vs Expected")
     public void testselenium2(){
 
         WebDriver driver = new EdgeDriver();
