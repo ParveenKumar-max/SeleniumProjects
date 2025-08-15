@@ -13,7 +13,7 @@ public class Ex_05_Assert_assertJ {
 
     @Test
     @Owner("Parveen Chaudhary")
-    @Description("TC_05_Verify TestNG assertJ")
+    @Description("TC_05_Verify TestNG AssertJ")
     public void testAssert_AssertJ(){
 
         WebDriver driver = new EdgeDriver();

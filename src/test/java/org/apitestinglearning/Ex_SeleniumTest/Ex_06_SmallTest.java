@@ -12,8 +12,8 @@ public class Ex_06_SmallTest extends CommonToAll {
 
 
     @Test
-    @Owner("")
-    @Description("")
+    @Owner("Parveen Chaudhary")
+    @Description("Verify Assert condition are working fine")
     public void testSeleniumSmallTest(){
 
         // Extends CommonToAll method.
@@ -27,11 +27,28 @@ public class Ex_06_SmallTest extends CommonToAll {
             Assert.fail("Cura Healthcare is not available on page");
         }
 
-        CloseBrowser(driver);
+                    // CloseBrowser(driver);
 
 
-        driver.close(); // only close the browser
+                //  driver.close(); // only close the browser
+
+            //        Thread.sleep(5000);
+           //        driver.close();
+
+         // Close - will close the current tab, not the session (not the all tabs)
+        // session id != null
+
+
+       // Thread.sleep(5000);
+
         driver.quit(); //  close the browser and session
+
+
+        // It will close all the tabs. - session id == null
+
+
+
+
 
         driver.navigate().to("https:google.com");
         driver.navigate().back();
