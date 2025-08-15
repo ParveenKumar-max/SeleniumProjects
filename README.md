@@ -5,3 +5,7 @@
 05-08-2025 --> Create a selenium Project
 
 06-08-2025 --> Default Locators
+
+07-08-2025  --> Selenium Project from Scratch -- Default locators and Advanced Locators, small excercise
+
+15-08-2025  --> Web Tables, <Table> <tr> <td>
