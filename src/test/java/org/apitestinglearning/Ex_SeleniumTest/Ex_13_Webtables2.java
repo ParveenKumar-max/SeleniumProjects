@@ -31,10 +31,8 @@ public class Ex_13_Webtables2 {
                 visibilityOfElementLocated(By.xpath("//table[@class='iana-table']")));
 
         //  driver.findElement(By.xpath("//table[@class='iana-table']"));
-
         // Get all rows (except header)
         List<WebElement> rows = driver.findElements(By.xpath("//table[@class='iana-table']"));
-
 
         // Find first table item and Match.
 
@@ -44,17 +42,13 @@ public class Ex_13_Webtables2 {
             {  // Search By Name
 
                 System.out.println("First Name is " + name + "  matching");
-
             }
-
-        for (int i = 0;  i < rows.size(); i++) {
+            for (int i = 0;  i < rows.size(); i++) {
             List<WebElement> col = rows.get(i).findElements(By.tagName("td"));
             for (WebElement c : col) {
-                System.out.println(c.getText());
+                System.out.println(c.getText() + " | ");
             }
-
         }
-
         driver.quit();
     }
 }
