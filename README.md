@@ -11,3 +11,5 @@
 15-08-2025  --> Web Tables, Table tr td
 
 19-08-2025  --> All Waits, and  One mini project
+
+20-08-2025 --> Selenium Project from Scratch -- Selectbox, Radio $ Checkbox
