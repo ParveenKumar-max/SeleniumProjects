@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class Ex_19_HandlingSVG {
+public class Ex_20_HandlingSVG {
 
     EdgeDriver driver = new EdgeDriver();
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
 
     @Test
     @Owner("Parveen Chaudhary")
-    @Description("TC_12_Verify Selectbox")
+    @Description("TC_12_Verify Handle SVG")
     public void testHandlingSVG(){
 
         driver.get("https://www.flipkart.com/");
@@ -41,12 +41,6 @@ public class Ex_19_HandlingSVG {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@data-id, 'ACCFSDGXX3S6DVBG')]//div/a[2]")));
         WebElement element2 = driver.findElement(By.xpath("//div[contains(@data-id, 'ACCFSDGXX3S6DVBG')]//div/a[2]"));
         element2.click();
-
-
-
-
-
-
     }
 
     @AfterTest

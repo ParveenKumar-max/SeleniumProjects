@@ -62,8 +62,9 @@ public class Ex_16_FluentWait {
         // wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("notification-box-description")));
 
         FluentWait<WebDriver> wait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(10))
-                .pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
+                .withTimeout(Duration.ofSeconds(10))    // total wait time
+                .pollingEvery(Duration.ofSeconds(2)).   // check every 2 sec
+                ignoring(NoSuchElementException.class); // ignore exception
 
         WebElement error_message = wait.until(new Function<WebDriver, WebElement>() {
             @Override

@@ -52,3 +52,6 @@ public class Ex_13_Webtables2 {
         driver.quit();
     }
 }
+
+
+// next Web-tables  concept is //table[@id='customers']/tbody/tr ( https://awesomeqa.com/webtable.html )
