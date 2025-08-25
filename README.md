@@ -13,3 +13,7 @@
 19-08-2025  --> All Waits, and  One mini project
 
 20-08-2025 --> Selenium Project from Scratch -- Selectbox, Radio $ Checkbox
+
+22-08-2025 --> Handling SVG
+
+24-08-2025 --> Webtables, FluentWait, Handking SVG( //*[name()='svg'] ) , Action Classes, Alert Drag&Drop, WaitHelper Function
