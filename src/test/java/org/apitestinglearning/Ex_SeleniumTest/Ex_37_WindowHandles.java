@@ -56,9 +56,12 @@ public class Ex_37_WindowHandles {
 
         actions.sendKeys(Keys.PAGE_DOWN).build().perform();
 
-        WebElement fbElement = driver.findElement(By.xpath("//li[@class='facebook']"));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(), 'Facebook')]")));
+        WebElement fbElement = driver.findElement(By.xpath("//a[contains(text(), 'Facebook')]"));
         fbElement.click();
-        WebElement twitterElement = driver.findElement(By.xpath("//li[@class='twitter']"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(), 'Twitter')]")));
+        WebElement twitterElement = driver.findElement(By.xpath("//a[contains(text(), 'Twitter')]"));
         twitterElement.click();
 
 
@@ -73,19 +76,24 @@ public class Ex_37_WindowHandles {
 
         Set<String> windowHandle = driver.getWindowHandles();
         System.out.println("Handles Windows"+ windowHandle);
+
         for (String Handle : windowHandle) {
-            if (!Handle.equals(windowHandle)) {
+            if (!Handle.equals(Parent)) {   // ✅ Compare with Parent only
                 driver.switchTo().window(Handle);
                 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+                System.out.println("Switching to Window" + driver.getTitle());
+
                 if (driver.getTitle().contains("Facebook")) {
                     System.out.println("Facebook Page is open" + Handle);
                 }
-                if (driver.getTitle().contains("Twittor")) {
-                    System.out.println("Twittor Page is Open" + Handle);
+                if (driver.getTitle().contains("(@nopCommerce) / X")) {
+                    System.out.println("X Page is Open" + Handle);
                 }
             }
-            driver.switchTo().window(Parent);
         }
+        // ✅ Switch back to parent after loop
+        driver.switchTo().window(Parent);
     }
 
     @AfterTest
