@@ -17,3 +17,11 @@
 22-08-2025 --> Handling SVG
 
 24-08-2025 --> Webtables, FluentWait, Handking SVG( //*[name()='svg'] ) , Action Classes, Alert Drag&Drop, WaitHelper Function
+
+25-08-2025 --> Selenium Exception, Checked( Compile Time exception)  and Unchecked ( Run Time Exception )
+
+27-08-2025 --> Window Handle and Window Handles
+
+29-08-2025 --> JavaScript Exception and Relative Locators.
+
+31-08-2025 -- Selenium Project from Scratch -- Data Driven Testing Code working, MOCK file created Moockaro.com, Add Apache POI in POM.xml  
